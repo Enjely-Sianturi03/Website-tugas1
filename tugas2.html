@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Pemrograman Web</title>
+    <style>
+        body {
+            background-color: bisque;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .container {
+            background-color: aliceblue;
+            border-radius: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.35);
+            position:relative;
+            overflow: hidden;
+            width: 1000px;
+            max-width: 100%;
+            min-height: 1000px;
+        }
+        .judul {
+            color: darkturquoise;
+            font-size: 35px;
+        }
+        .gambar {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .judul-center {
+            color:cornflowerblue;
+            font-size: 25px;
+        }
+        .isi {
+            color:black;
+            font-size: 25px;
+            background-color: aquamarine;
+        }
+        .button {
+            border-radius: 10px;
+            margin: 2rem auto 0;
+            box-shadow: 0 14px 16px 0;
+            background-color: darkcyan;
+            color:aliceblue;
+            padding: .75rem 1.25rem;
+            margin: 1rem auto;
+            display:block;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+    <h1 align="center"class="judul"><b>FORMULIR REGISTRASI MAHASISWA BARU</b></h1>
+    <img src="images//Logo USU.png"width="150"class="gambar">
+    <h3 align="center"class="judul-center">Universitas Sumatera Utara</h3>
+    <form>
+        <fieldset>
+            <legend class="isi">Informasi Akun</legend>
+            <table class="konten">
+                <tr>
+                    <td width="120"><label for="no">No. Pendaftaran</label></td>
+                    <td><input type="text"id="no"name="no"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password</label></td>
+                    <td><input type="password"id="pass"name="password"><br></td>
+                </tr>
+                <tr>
+                    <td width="120"><label for="prodi">Program Studi</label></td>
+                    <td><input type="text"id="prodi"name="prodi"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="nomor">Nomor Handphone</label></td>
+                    <td><input type="nomor"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend class="isi">Data Diri</legend>
+    <table>
+        <tr>
+            <td width="120"><label for="name">Nama Lengkap</label></td>
+            <td><input type="text"id="name"name="name"><br></td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td width="100"><input type="radio"id="lk"name="jk"><label for="lk">Laki Laki</label></td>
+            <td><input type="radio"id="pr"name="jk"><label for="pr">Perempuan</label></td>
+        </tr>
+        <tr>
+            <td><label for="temp">Tempat Lahir</label></td>
+            <td><input type="text"id="temp"name="temp"><br></td>
+        </tr>
+        <tr>
+            <td>Tanggal Lahir</td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td>Agama</td>
+            <td>
+                <select name="agama"id="agama">
+                    <option value="#">-- Pilih Salah Satu --</option>
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="alamat">Alamat Domisili</label></td>
+            <td><textarea name="alamat"id="alamat"rows="5"cols="25"></textarea></td>
+        </tr>
+        <tr>
+            <td>Peminatan Ormawa</td>
+            <td><input type="checkbox"id="or"name="info"><label for="in">Inovasi, Sains dan Teknologi</label></td>
+            <td><input type="checkbox"id="tr"name="info"><label for="ol">Olahraga, Kesehatan dan Jasmani</label></td>
+            <td><input type="checkbox"id="ke"name="info"><label for="ke">Kerohanian, Seni dan Kebudayaan</label></td>
+            <td><input type="checkbox"id="ke"name="info"><label for="wa">Wawasan Kebangsaan, Kebhinekaan, Pengabdian dan Keorganisasian</label></td>
+            <td><input type="checkbox"id="ke"name="info"><label for="kew">Kewirausahaan dan literasi</label><br></td> 
+        </tr>
+    </table>
+    </fieldset>
+    <input type="submit"value="Daftar"align="center"class="button">
+    <input type="submit"value="Reset"align="center"class="button">
+    </form>
+    </div>
+    </div>
+</body>
+</html>
